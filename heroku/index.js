@@ -38,6 +38,13 @@ app.post('/facebook', function(req, res) {
   res.sendStatus(200);
 });
 
+app.post('/test', function(req, res) {
+  console.log('test request');
+  console.log(req.body);
+  res.sendStatus(200);
+  res.send(req.body);
+});
+
 app.post('/instagram', function(req, res) {
   console.log('Instagram request body:');
   console.log(req.body);
