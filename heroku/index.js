@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 
 app.get('/', function(req, res) {
   console.log(req);
-  res.send('It works! Edit 1');
+  res.send('It works! Edit 2');
 });
 
 app.get(['/facebook', '/instagram'], function(req, res) {
@@ -38,7 +38,7 @@ app.post('/facebook', function(req, res) {
   res.sendStatus(200);
 });
 
-app.post('/test', function(req, res) {
+app.get('/test', function(req, res) {
   console.log('test request');
   console.log(req.body);
   res.sendStatus(200);
